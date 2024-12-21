@@ -6,12 +6,12 @@ ErrRecordExist: "記錄已存在"
 ErrRecordNotFound: "記錄未找到"
 ErrStructTransform: "類型轉換失敗: {{ .detail }}"
 ErrNotLogin: "用戶未登入: {{ .detail }}"
-ErrPasswordExpired: "當前密碼已過期: {{ .detail }}"
-ErrNotSupportType: "系統暫不支持當前類型: {{ .detail }}"
-ErrApiConfigStatusInvalid: "API 接口禁止訪問: {{ .detail }}"
-ErrApiConfigKeyInvalid: "API 接口密钥錯誤: {{ .detail }}"
-ErrApiConfigIPInvalid: "调用 API 接口 IP 不在白名单: {{ .detail }}"
-ErrApiConfigDisable: "此接口禁止使用 API 接口調用: {{ .detail }}"
+ErrPasswordExpired: "目前密碼已過期: {{ .detail }}"
+ErrNotSupportType: "系統暫不支援目前類型: {{ .detail }}"
+ErrApiConfigStatusInvalid: "API 介面禁止訪問: {{ .detail }}"
+ErrApiConfigKeyInvalid: "API 介面金鑰錯誤: {{ .detail }}"
+ErrApiConfigIPInvalid: "呼叫 API 介面 IP 不在白名單: {{ .detail }}"
+ErrApiConfigDisable: "此介面禁止使用 API 介面呼叫: {{ .detail }}"
 
 #common
 ErrNameIsExist: "名稱已存在"
@@ -34,11 +34,11 @@ ErrPortInUsed: "{{ .detail }} 埠已被佔用！"
 ErrAppLimit: "應用超出安裝數量限制"
 ErrAppRequired: "請先安裝 {{ .detail }} 應用"
 ErrNotInstall: "應用未安裝"
-ErrPortInOtherApp: "{{ .port }} 端口已被應用 {{ .apps }} 佔用！"
+ErrPortInOtherApp: "{{ .port }} 埠已被應用 {{ .apps }} 佔用！"
 ErrDbUserNotValid: "儲存資料庫，用戶名密碼不匹配！"
 ErrDockerComposeNotValid: "docker-compose 文件格式錯誤"
 ErrUpdateBuWebsite: '應用更新成功，但是網站配置文件修改失敗，請檢查配置！'
-Err1PanelNetworkFailed: '默認容器網絡創建失敗！{{ .detail }}'
+Err1PanelNetworkFailed: '預設容器網路建立失敗！{{ .detail }}'
 ErrFileParse: '應用 docker-compose 文件解析失敗!'
 ErrInstallDirNotFound: '安裝目錄不存在'
 AppStoreIsUpToDate: '應用商店已經是最新版本'
@@ -50,7 +50,7 @@ ErrAppDirNull: '版本資料夾不存在'
 LocalAppErr: "應用 {{.name}} 同步失敗！{{.err}}"
 ErrContainerName: "容器名稱已存在"
 ErrAppSystemRestart: "1Panel 重啟導致任務中斷"
-ErrCreateHttpClient: "創建HTTP請求失敗 {{.err}}"
+ErrCreateHttpClient: "建立HTTP請求失敗 {{.err}}"
 ErrHttpReqTimeOut: "請求超時 {{.err}}"
 ErrHttpReqFailed: "請求失敗 {{.err}}"
 ErrHttpReqNotFound: "文件不存在"
@@ -60,7 +60,7 @@ ErrContainerNotFound: '{{ .name }} 容器不存在'
 ErrContainerMsg: '{{ .name }} 容器異常，具體請在容器頁面查看日誌'
 ErrAppBackup: '{{ .name }} 應用備份失敗 err {{.err}}'
 ErrImagePull: '{{ .name }} 鏡像拉取失敗 err {{.err}}'
-ErrVersionTooLow: '當前 1Panel 版本過低，無法更新應用商店，請升級版本之後操作'
+ErrVersionTooLow: '目前 1Panel 版本過低，無法更新應用商店，請升級版本之後操作'
 ErrAppNameExist: '應用名稱已存在'
 AppStoreIsSyncing: '應用程式商店正在同步中，請稍後再試'
 ErrGetCompose: "docker-compose.yml 檔案取得失敗！{{ .detail }}"
@@ -74,27 +74,27 @@ UpgradeAppStart: "開始升級應用程式 {{ .name }}"
 UpgradeAppSuccess: "應用程式 {{ .name }} 升級成功"
 
 #file
-ErrFileCanNotRead: "此文件不支持預覽"
+ErrFileCanNotRead: "此文件不支援預覽"
 ErrFileToLarge: "文件超過10M,無法打開"
 ErrPathNotFound: "目錄不存在"
 ErrMovePathFailed: "目標路徑不能包含原路徑！"
 ErrLinkPathNotFound: "目標路徑不存在!"
-ErrFileIsExist: "文件或文件夾已存在！"
+ErrFileIsExist: "文件或資料夾已存在！"
 ErrFileUpload: "{{ .name }} 上傳文件失敗 {{ .detail}}"
-ErrFileDownloadDir: "不支持下載文件夾"
+ErrFileDownloadDir: "不支援下載資料夾"
 ErrCmdNotFound: "{{ .name}} 命令不存在，請先在宿主機安裝此命令"
 ErrSourcePathNotFound:  "源目錄不存在"
 ErrFavoriteExist: "已收藏此路徑"
-ErrPathNotDelete: "所選目錄不可删除"
+ErrPathNotDelete: "所選目錄不可刪除"
 
 #website
 ErrDomainIsExist: "域名已存在"
 ErrAliasIsExist: "代號已存在"
 ErrAppDelete: '其他網站使用此應用,無法刪除'
 ErrGroupIsUsed: '分組正在使用中，無法刪除'
-ErrBackupMatch: '該備份文件與當前網站部分數據不匹配: {{ .detail}}'
+ErrBackupMatch: '該備份文件與目前網站部分數據不匹配: {{ .detail}}'
 ErrBackupExist: '該備份文件對應部分原數據不存在: {{ .detail}}'
-ErrPHPResource: '本地運行環境不支持切換！'
+ErrPHPResource: '本地運行環境不支援切換！'
 ErrPathPermission: 'index 目錄下偵測到非 1000:1000 權限資料夾，可能導致網站存取 Access denied 錯誤，請點擊上方儲存按鈕'
 ErrDomainIsUsed: "域名已被網站【{{ .name }}】使用"
 ErrDomainFormat: "{{ .name }} 域名格式不正確"
@@ -122,7 +122,7 @@ DNSAccountName: 'DNS 帳號 [{{ .name }}] 廠商 [{{.type}}]'
 PushDirLog: '憑證推送到目錄 [{{ .path }}] {{ .status }}'
 ErrDeleteCAWithSSL: "目前機構下存在已簽發證書，無法刪除"
 ErrDeleteWithPanelSSL: "面板 SSL 配置使用此證書，無法刪除"
-ErrDefaultCA: "默認機構不能刪除"
+ErrDefaultCA: "預設機構不能刪除"
 ApplyWebSiteSSLLog: "開始更新 {{ .name }} 網站憑證"
 ErrUpdateWebsiteSSL: "{{ .name }} 網站更新憑證失敗: {{ .err }}"
 ApplyWebSiteSSLSuccess: "更新網站憑證成功"
@@ -133,23 +133,23 @@ StartUpdateSystemSSL: "開始更新系統證書"
 UpdateSystemSSLSuccess: "更新系統證書成功"
 
 #mysql
-ErrUserIsExist: "當前用戶已存在，請重新輸入"
-ErrDatabaseIsExist: "當前資料庫已存在，請重新輸入"
+ErrUserIsExist: "目前用戶已存在，請重新輸入"
+ErrDatabaseIsExist: "目前資料庫已存在，請重新輸入"
 ErrExecTimeOut: "SQL 執行超時，請檢查資料庫"
 ErrRemoteExist: "遠程資料庫已存在該名稱，請修改後重試"
 ErrLocalExist: "本地資料庫已存在該名稱，請修改後重試"
 
 #redis
-ErrTypeOfRedis: "恢復文件類型與當前持久化方式不匹配，請修改後重試"
+ErrTypeOfRedis: "恢復文件類型與目前持久化方式不匹配，請修改後重試"
 
 #container
 ErrInUsed: "{{ .detail }} 正被使用，無法刪除"
 ErrObjectInUsed: "該對象正被使用，無法刪除"
-ErrPortRules: "端口數目不匹配，請重新輸入！"
+ErrPortRules: "埠數目不匹配，請重新輸入！"
 ErrPgImagePull: "鏡像拉取超時，請配置鏡像加速或手動拉取 postgres:16.0-alpine 鏡像後重試"
 
 #runtime
-ErrDirNotFound: "build 文件夾不存在！請檢查文件完整性！"
+ErrDirNotFound: "build 資料夾不存在！請檢查文件完整性！"
 ErrFileNotExist: "{{ .detail }} 文件不存在！請檢查源文件完整性！"
 ErrImageBuildErr: "鏡像 build 失敗"
 ErrImageExist: "鏡像已存在！"
@@ -158,13 +158,13 @@ ErrRuntimeStart: "啟動失敗"
 ErrPackageJsonNotFound: "package.json 文件不存在"
 ErrScriptsNotFound: "沒有在 package.json 中找到 scripts 配置項"
 ErrContainerNameNotFound: "無法取得容器名稱，請檢查 .env 文件"
-ErrNodeModulesNotFound: "node_modules 文件夾不存在！請編輯運行環境或者等待運行環境啟動成功"
+ErrNodeModulesNotFound: "node_modules 資料夾不存在！請編輯運行環境或者等待運行環境啟動成功"
 
 #setting
 ErrBackupInUsed: "該備份帳號已在計劃任務中使用，無法刪除"
 ErrBackupCheck: "備份帳號測試連接失敗 {{ .err}}"
-ErrOSSConn: "無法獲取最新版本，請確認伺服器是否能夠連接外部網路。"
-ErrEntrance: "安全入口信息錯誤，請檢查後重試！"
+ErrOSSConn: "無法取得最新版本，請確認伺服器是否能夠連接外部網路。"
+ErrEntrance: "安全入口資訊錯誤，請檢查後重試！"
 
 #tool
 ErrConfigNotFound: "配置文件不存在"
@@ -176,16 +176,16 @@ ErrUserFindErr: "用戶 {{ .name }} 查找失敗 {{ .err }}"
 
 #ssh
 ErrFirewallNone: "未檢測到系統 firewalld 或 ufw 服務，請檢查後重試！"
-ErrFirewallBoth: "檢測到系統同時存在 firewalld 或 ufw 服務，為避免衝突，請卸載後重試！"
+ErrFirewallBoth: "檢測到系統同時存在 firewalld 或 ufw 服務，為避免衝突，請移除後重試！"
 
 #cronjob
-ErrBashExecute: "腳本執行錯誤，請在任務輸出文本域中查看具體信息。"
+ErrBashExecute: "腳本執行錯誤，請在任務輸出文本域中查看具體資訊。"
 ErrCutWebsiteLog: "{{ .name }} 網站日誌切割失敗，錯誤 {{ .err }}"
 CutWebsiteLogSuccess: "{{ .name }} 網站日誌切割成功，備份路徑 {{ .path }}"
 
 #toolbox
-ErrNotExistUser: "當前使用者不存在，請修改後重試！"
-ErrBanAction: "設置失敗，當前 {{ .name }} 服務不可用，請檢查後重試！"
+ErrNotExistUser: "目前使用者不存在，請修改後重試！"
+ErrBanAction: "設定失敗，目前 {{ .name }} 服務不可用，請檢查後重試！"
 ErrClamdscanNotFound: "未偵測到 clamdscan 指令，請參考文件安裝！"
 
 #waf
@@ -203,13 +203,13 @@ ErrIPExist: "IP 已存在"
 #license
 ErrLicense: "許可證格式錯誤，請檢查後重試！"
 ErrLicenseCheck: "許可證校驗失敗，請檢查後重試！"
-ErrLicenseSave: "許可證信息保存失敗，錯誤 {{ .err }}, 請重試！"
-ErrLicenseSync: "許可證信息同步失敗，資料庫中未檢測到許可證信息！"
-ErrXpackNotFound: "該部分為專業版功能，請先在 面板設置-許可證 界面導入許可證"
-ErrXpackNotActive: "該部分為專業版功能，請先在 面板設置-許可證 界面同步許可證狀態"
-ErrXpackOutOfDate: "當前許可證已過期，請重新在 面板設置-許可證 界面導入許可證"
+ErrLicenseSave: "許可證資訊保存失敗，錯誤 {{ .err }}, 請重試！"
+ErrLicenseSync: "許可證資訊同步失敗，資料庫中未檢測到許可證資訊！"
+ErrXpackNotFound: "該部分為專業版功能，請先在 面板設定-許可證 界面導入許可證"
+ErrXpackNotActive: "該部分為專業版功能，請先在 面板設定-許可證 界面同步許可證狀態"
+ErrXpackOutOfDate: "目前許可證已過期，請重新在 面板設定-許可證 界面導入許可證"
 ErrXpackLost: "許可證已達到最大重試次數，請進入【面板設定】【許可證】頁面手動點擊同步按鈕，以確保專業版功能正常使用"
-ErrXpackTimeout: "請求超時，網絡連接可能不穩定，請稍後再試！"
+ErrXpackTimeout: "請求超時，網路連接可能不穩定，請稍後再試！"
 
 #license
 ErrAlert: "告警資訊格式錯誤，請檢查後重試！"
@@ -222,20 +222,20 @@ ErrAlertRemote: "告警資訊遠端錯誤，請檢查後重試！"
 AppVersion: "應用版本"
 AppCommands: "應用相關命令"
 AppInit: "初始化應用"
-AppKeyVal: "應用的 key（僅支持英文）"
-AppCreateFileErr: "文件 {{ .name }} 創建失敗 {{ .err }}"
-AppCreateDirErr: "資料夾 {{ .name }} 創建失敗 {{ .err }}"
+AppKeyVal: "應用的 key（僅支援英文）"
+AppCreateFileErr: "文件 {{ .name }} 建立失敗 {{ .err }}"
+AppCreateDirErr: "資料夾 {{ .name }} 建立失敗 {{ .err }}"
 AppMissKey: "應用的 key 缺失，使用 -k 指定"
 AppMissVersion: "應用版本缺失，使用 -v 指定"
 AppVersionExist: "版本已存在！"
-AppCreateSuccessful: "創建成功！"
+AppCreateSuccessful: "建立成功！"
 AppWriteErr: "文件 {{ .name }} 寫入失敗 {{ .err }}"
 SudoHelper: "請使用 {{ .cmd }} 或者切換到 root 用戶"
 ListenIPCommands: "切換監聽 IP"
 ListenIPv4: "監聽 IPv4"
 ListenIPv6: "監聽 IPv6"
 ListenChangeSuccessful: "切換成功！已切換至監聽 {{ .value }}"
-ResetCommands: "重置系統信息"
+ResetCommands: "重置系統資訊"
 ResetMFA: "取消 1Panel 兩步驗證"
 ResetHttps: "取消 1Panel https 方式登錄"
 ResetEntrance: "取消 1Panel 安全入口"
@@ -249,33 +249,33 @@ RestoreStep3: "（3/5）1Panel 腳本回滾成功"
 RestoreStep4: "（4/5）1Panel 服務回滾成功"
 RestoreStep5: "（5/5）1Panel 數據回滾成功"
 RestoreSuccessful: "回滾成功！正在重啟服務，請稍候..."
-UpdateCommands: "修改面板信息"
+UpdateCommands: "修改面板資訊"
 UpdateUser: "修改面板用戶"
 UpdatePassword: "修改面板密碼"
 UpdatePort: "修改面板埠"
 UpdateUserNull: "錯誤：輸入面板用戶為空！"
 UpdateUserBlank: "錯誤：輸入面板用戶中包含空格字符！"
-UpdateUserFormat: "錯誤：輸入面板用戶錯誤！僅支持英文、中文、數字和_，長度3-30"
+UpdateUserFormat: "錯誤：輸入面板用戶錯誤！僅支援英文、中文、數字和_，長度3-30"
 UpdateUserErr: "錯誤：面板用戶修改失敗，{{ .err }}"
 UpdateSuccessful: "修改成功！"
 UpdateUserResult: "面板用戶：{{ .name }}"
-UpdatePasswordRead: "錯誤：面板密碼信息讀取錯誤，{{ .err }}"
+UpdatePasswordRead: "錯誤：面板密碼資訊讀取錯誤，{{ .err }}"
 UpdatePasswordNull: "錯誤：輸入面板密碼為空！"
 UpdateUPasswordBlank: "錯誤：輸入面板密碼中包含空格字符！"
-UpdatePasswordFormat: "錯誤：面板密碼僅支持字母、數字、特殊字符（!@#$%*_,.?），長度 8-30 位！"
+UpdatePasswordFormat: "錯誤：面板密碼僅支援字母、數字、特殊字符（!@#$%*_,.?），長度 8-30 位！"
 UpdatePasswordLen: "錯誤：請輸入 6 位以上密碼！"
 UpdatePasswordRe: "確認密碼："
 UpdatePasswordErr: "錯誤：面板密碼修改失敗，{{ .err }}"
 UpdatePasswordSame: "錯誤：兩次密碼不匹配，請檢查後重試！"
 UpdatePasswordResult: "面板密碼：{{ .name }}"
-UpdatePortFormat: "錯誤：輸入的端口號必須在 1 到 65535 之間！"
-UpdatePortUsed: "錯誤：該端口號正被佔用，請檢查後重試！"
-UpdatePortErr: "錯誤：面板端口修改失敗，{{ .err }}"
-UpdatePortResult: "面板端口：{{ .name }}"
+UpdatePortFormat: "錯誤：輸入的埠號必須在 1 到 65535 之間！"
+UpdatePortUsed: "錯誤：該埠號正被佔用，請檢查後重試！"
+UpdatePortErr: "錯誤：面板埠修改失敗，{{ .err }}"
+UpdatePortResult: "面板埠：{{ .name }}"
 UpdatePortFirewallAdd: "添加防火牆埠規則失敗，{{ .err }}，請您手動將 {{ .name }} 埠添加至防火牆規則中。"
 UpdatePortFirewallDel: "錯誤：防火牆埠刪除失敗，{{ .err }}"
 UpdatePortFirewallReload: "防火牆重載失敗，{{ .err }}，請您手動重載防火牆。"
-UserInfo: "獲取面板信息"
+UserInfo: "取得面板資訊"
 UserInfoAddr: "面板地址："
 UserInfoPassHelp: "提示：修改密碼可執行命令："
 DBConnErr: "錯誤：初始化資料庫連接失敗，{{ .err }}"
